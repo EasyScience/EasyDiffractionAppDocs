@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# misc
+.venv
+public/
+jupyter_execute
+.ipynb_checkpoints
