@@ -32,7 +32,7 @@ If the relevant **EasyDiffraction** installation does not work on your system, t
   ```
   poetry install
   ```  
-5. Launch **EasyDiffraction** application using **poetry**:
+* Launch **EasyDiffraction** application using **poetry**:
   ```
   poetry run easyDiffraction
   ```
