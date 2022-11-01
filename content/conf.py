@@ -14,10 +14,12 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['myst_nb']
 
 templates_path = ['_templates']
 exclude_patterns = []
+
+myst_enable_extensions = ['amsmath', 'dollarmath']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
