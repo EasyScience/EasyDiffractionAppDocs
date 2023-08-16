@@ -2,9 +2,9 @@
 
 If the relevant **EasyDiffraction** installation does not work on your system, then please try running it from source.
 
-* Clone **easyDiffractionApp** repo from GitHub, e.g. using
+* Clone **easyDiffractionApp** repo (release-0.9.0 branch) from GitHub, e.g. using
 ```console
-$ git clone --branch release-0.9.0 https://github.com/easyscience/easyDiffractionApp
+$ git clone -b release-0.9.0 https://github.com/easyscience/easyDiffractionApp
 ```
 * Go to **easyDiffractionApp** directory
 ```console
