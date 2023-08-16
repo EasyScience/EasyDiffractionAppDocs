@@ -46,9 +46,9 @@ The `Sidebar` is located at the right side of the application window, below the 
 2. `Advanced controls` tab describes additional actions recommended for advanced users.
 2. `Text mode` tab contains all controls in plain text, as STAR/CIF.
 
-## Statusbar
+## Status bar
 
-The `Statusbar` is located at the very bottom of the application window. It contains some important information, such as project name, number of defined models and experimental data sets, selected calculation engine and minimization module, etc.
+The `Status bar` is located at the very bottom of the application window. It contains some important information, such as project name, number of defined models and experimental data sets, selected calculation engine and minimization module, etc.
 
 ![](../assets/images/statusbar_lightmode.png#gh-light-mode-only)
 ![](../assets/images/statusbar_darkmode.png#gh-dark-mode-only)
