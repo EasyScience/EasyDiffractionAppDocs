@@ -1,13 +1,13 @@
 [0]: #
-[1]: https://www.iucr.org/resources/cif/dictionaries/cif_core
-[2]: https://www.iucr.org/__data/iucr/cifdic_html/1/cif_pd.dic/index.html
+[1]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_core
+[2]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd
 
 [customCIF][0]{:.label-cif}
 
-# _pd_calib
+# \_pd_calib
 
-This section defines the parameters used for the calibration of the instrument, similar to this [IUCr section](https://www.iucr.org/__data/iucr/cifdic_html/1/cif_pd.dic/Cpd_calib.html).
+This section defines the parameters used for the calibration of the instrument, similar to this [IUCr section](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd).
 
-## [\_pd_calib_2theta_offset](#)
+## [\_pd_calib.2theta_offset](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd)
 
-An offset angle (in degrees) used to calibrate 2theta.
+An offset angle (in degrees) used to calibrate 2θ.

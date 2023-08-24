@@ -1,12 +1,12 @@
 [0]: #
-[1]: https://www.iucr.org/resources/cif/dictionaries/cif_core
-[2]: https://www.iucr.org/__data/iucr/cifdic_html/1/cif_pd.dic/index.html
+[1]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_core
+[2]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd
 
 [customCIF][0]{:.label-cif}
 
 # _pd_meas
 
-This section contains the measured diffractogram, similar to this [IUCr section](https://www.iucr.org/__data/iucr/cifdic_html/1/cif_pd.dic/Cpd_meas.html).
+This section contains the measured diffractogram, similar to this [IUCr section](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd).
 
 ## [\_pd_meas_2theta](#)
 

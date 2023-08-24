@@ -1,17 +1,21 @@
 [0]: #
-[1]: https://www.iucr.org/resources/cif/dictionaries/cif_core
-[2]: https://www.iucr.org/__data/iucr/cifdic_html/1/cif_pd.dic/index.html
+[1]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_core
+[2]: https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd
 
-[customCIF][0]{:.label-cif}
+[pdCIF][2]{:.label-cif}
 
-# _pd_background
+# \_pd_background
 
-This section contains information about background intensities at the selected points.
+This category defines various background functions that could be used when calculating diffractograms. Please see the [IUCr page](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd) for further details.
 
-## [\_pd_background_2theta](#)
+## [\_pd_background.line_segment_X](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd)
 
-The diffractometer angles in degrees.
+List of X-coordinates used to create many straight-line segments representing the background in a calculated diffractogram.
 
-## [\_pd_background_intensity](#)
+## [\_pd_background.line_segment_intensity](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd)
 
-Calculated background intensities.
+List of intensities used to create many straight-line segments representing the background in a calculated diffractogram.
+
+## [\_pd_background.X_coordinate](https://www.iucr.org/resources/cif/dictionaries/browse/cif_pd)
+
+The type of X-coordinate against which the pd_background values were calculated.
