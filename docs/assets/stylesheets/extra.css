@@ -13,7 +13,7 @@
   --sz-body-background-color--darkmode: #262626;
   --sz-body-text-color--darkmode: #a3a3a3;
   --sz-body-heading-color--darkmode: #e5e5e5;
-  --sz-code-background-color--darkmode: #353535;
+  --sz-code-background-color--darkmode: #e5e5e5;
 }
 
 /* Default styles https://github.com/squidfunk/mkdocs-material/blob/master/src/assets/stylesheets/main/_typeset.scss */
