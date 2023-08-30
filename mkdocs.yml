@@ -9,6 +9,7 @@ theme:
   name: material
   custom_dir: overrides
   features:
+    - content.action.edit
     - content.code.annotate
     - content.tooltips
     - navigation.indexes
@@ -23,12 +24,14 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom
       toggle:
         icon: fontawesome/solid/sun
         name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
       toggle:
         icon: fontawesome/solid/moon
         name: Switch to light mode
@@ -59,7 +62,9 @@ extra:
 
 # Repository
 repo_url: https://github.com/easyscience/EasyDiffractionAppDocs
+edit_uri: edit/develop/docs/
 
+# Extensions
 markdown_extensions:
   - abbr
   - attr_list

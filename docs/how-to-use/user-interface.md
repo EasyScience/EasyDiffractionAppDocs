@@ -12,7 +12,7 @@ The `Toolbar` at the top of the application window contains three groups of butt
 ![](../assets/images/app-toolbar-groups_lightmode.png#gh-light-mode-only)
 ![](../assets/images/app-toolbar-groups_darkmode.png#gh-dark-mode-only)
 
-The left and right groups of buttons, **group A** and **group B**, allow you to call some basic application actions, such as saving the project state, undo/redo settings, etc.
+The left and right groups of buttons, **group A** and **group C**, allow you to call some basic application actions, such as saving the project state, undo/redo settings, etc.
 
 The central group of buttons, **group B**, represents the data analysis workflow. After the application starts, all the toolbar workflow buttons except the `Home` button are disabled. When each step in the workflow is completed, the toolbar workflow button which corresponds to the next step becomes enabled.
 
