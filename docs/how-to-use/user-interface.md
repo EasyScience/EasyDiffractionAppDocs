@@ -30,14 +30,14 @@ The following workflow buttons or workflow steps are present:
 
 ## Main window
 
-The `Main Window` of the program is located below the `Toolbar` and it can contain several tabs depending on the current step in the data analysis workflow. An example of the `Main Window` for the analysis step is shown in the figure below.
+The `Main Window` of the program is located below the `Toolbar` and it can contain several tabs depending on the current step in the data analysis workflow. An example of the `Main Window` for the analysis step is shown below.
 
 ![](../assets/images/mainwindow-tabs_lightmode.png#gh-light-mode-only)
 ![](../assets/images/mainwindow-tabs_darkmode.png#gh-dark-mode-only)
 
 ## Sidebar
 
-The `Sidebar` is located at the right side of the application window, below the `Toolbar`. It has 2 tabs: `Basic controls` and `Advanced controls`. Their contents depend on the selected tab in the `Toolbar` and the respective tab in the `Main Window`. You can switch between them at any time clicking on the required tab.
+The `Sidebar` is located at the right side of the application window, below the `Toolbar`. It has 3 tabs: `Basic controls`, `Advanced controls` and `Text mode`. Their contents depend on the selected workflow step in the `Toolbar` and the respective tab in the `Main Window`. You can switch between them at any time clicking on the required tab.
 
 ![](../assets/images/sidebar-tabs_lightmode.png#gh-light-mode-only)
 ![](../assets/images/sidebar-tabs_darkmode.png#gh-dark-mode-only)
