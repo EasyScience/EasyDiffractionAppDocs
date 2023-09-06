@@ -744,11 +744,11 @@
 <h1 id="installation-from-source">Installation from source</h1>
 <p>If the relevant <strong>EasyDiffraction</strong> installation does not work on your system, then please try running it from source.</p>
 <ul>
-<li>Clone <strong>easyDiffractionApp</strong> repo (release-0.9.0 branch) from GitHub, e.g. using
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>release-0.9.0<span class="w"> </span>https://github.com/easyscience/easyDiffractionApp
+<li>Clone <strong>EasyDiffractionBeta</strong> repo (master branch) from GitHub, e.g. using
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/easyscience/EasyDiffractionBeta
 </code></pre></div></li>
-<li>Go to <strong>easyDiffractionApp</strong> directory
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>easyDiffractionApp
+<li>Go to <strong>EasyDiffractionBeta</strong> directory
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>EasyDiffractionBeta
 </code></pre></div></li>
 <li>Create Python environment and activate it
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
@@ -756,12 +756,13 @@
 </code></pre></div></li>
 <li>Upgrade <abbr title="Package installer for Python.">PIP</abbr> and install dependences
 <div class="highlight"><pre><span></span><code><span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
-<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>lmfit<span class="w"> </span>orjson<span class="w"> </span>jsbeautifier
+<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>lmfit<span class="w"> </span>numdifftools
+<span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>orjson<span class="w"> </span>jsbeautifier
 <span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/ikibalin/cryspy.git@beta
 <span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/easyscience/EasyApp.git@new-easy-app2
 </code></pre></div></li>
 <li>Launch <strong>EasyDiffraction</strong> application using Python
-<div class="highlight"><pre><span></span><code><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>EasyDiffractionApp
+<div class="highlight"><pre><span></span><code><span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>easyDiffractionApp
 <span class="gp">$ </span>python<span class="w"> </span>main.py
 </code></pre></div></li>
 </ul>
