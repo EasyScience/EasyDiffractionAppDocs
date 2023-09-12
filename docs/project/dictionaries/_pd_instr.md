@@ -10,21 +10,19 @@ This section contains information relevant to the instrument used for the diffra
 
 ## [\_pd_instr.resolution](#)
 
-Pseudo-Voigt peak profile function as implemented in [CrysPy](https://cryspy.fr).
-
 In general, the profile of a Bragg reflection centred at the peak position can be approximated by mathematical convolution of contributions from the instrument, called the instrumental resolution function, and from the microstructure of the sample. Because many contributions to powder diffraction peaks have a nearly Gaussian or Lorentzian shape, the pseudo-Voigt function, is widely used to describe peak profiles in powder diffraction.
 
-Half-width parameters (normally characterising the instrumental resolution function):
+Half-width parameters (normally characterising the instrumental resolution function) as implemented in [CrysPy](https://cryspy.fr):
 
 * \_pd_instr.resolution_u
 * \_pd_instr.resolution_v
 * \_pd_instr.resolution_w
 
-Lorentzian isotropic microstrain parameter:
+Lorentzian isotropic microstrain parameter as implemented in [CrysPy](https://cryspy.fr):
 
 * \_pd_instr.resolution_x
 
-Lorentzian isotropic particle size parameter:
+Lorentzian isotropic particle size parameteras implemented in [CrysPy](https://cryspy.fr):
 
 * \_pd_instr.resolution_y
 
