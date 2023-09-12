@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
     
     
       
@@ -591,6 +591,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Structure
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -600,6 +611,39 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cif-based-project-files" class="md-nav__link">
+    CIF-based project files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-supported-data-files" class="md-nav__link">
+    Other supported data files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -720,6 +764,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cif-based-project-files" class="md-nav__link">
+    CIF-based project files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-supported-data-files" class="md-nav__link">
+    Other supported data files
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -743,6 +809,7 @@
 
 <h1 id="project-structure">Project structure</h1>
 <p>Input/output files for EasyDiffraction are in simple and human-readable data format STAR/CIF with the specifications of <a href="https://www.iucr.org">International Union of Crystallography</a>, where possible.</p>
+<h2 id="cif-based-project-files">CIF-based project files</h2>
 <p>Example project structure for the constant wavelength powder neutron diffraction measurement is given below:</p>
 <div class="highlight"><pre><span></span><code>La0.5Ba0.5CoO3     - Project directory.
 ├── project.cif    - Main project description file.
@@ -852,6 +919,56 @@
 <span class="mf">164.75</span><span class="w">  </span><span class="mi">175</span><span class="w">  </span><span class="mf">38.2</span>
 <span class="mf">164.80</span><span class="w">  </span><span class="mi">168</span><span class="w">  </span><span class="mf">30.9</span>
 <span class="mf">164.85</span><span class="w">  </span><span class="mi">109</span><span class="w">  </span><span class="mf">41.2</span>
+</code></pre></div>
+<h2 id="other-supported-data-files">Other supported data files</h2>
+<p>If you do not have a CIF file with both the instrumental parameters and measured data, as in the example above (hrpt.cif), you can import only measured data, which are then automatically converted into CIF with default parameters. These can be later edited in the application.</p>
+<p>The following measured data formats are supported:</p>
+<ul>
+<li>If standard deviations of measured intensities are present, the file should have either <code>*.xye</code> or <code>*.xys</code> extension and contain the following 3 columns: <a href="../dictionaries/_pd_meas/">_pd_meas.2theta_scan</a>, <a href="../dictionaries/_pd_meas/">_pd_meas.intensity_total</a> and <a href="../dictionaries/_pd_meas/">_pd_meas.intensity_total_su</a>.</li>
+<li>If standard deviations of measured intensities are not given, the file should have <code>*.xy</code> extension and contain the following 2 columns: <a href="../dictionaries/_pd_meas/">_pd_meas.2theta_scan</a> and <a href="../dictionaries/_pd_meas/">_pd_meas.intensity_total</a>. In this case, the <a href="../dictionaries/_pd_meas/">_pd_meas.intensity_total_su</a> is calculated as the square root of <a href="../dictionaries/_pd_meas/">_pd_meas.intensity_total</a>.</li>
+</ul>
+<p>Optional comments with <code>#</code> are possible in data file headers.</p>
+<p>Here are some examples:</p>
+<h3 id="example1xye">example1.xye</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">#  2theta  intensity   su</span>
+   <span class="mf">10.00</span>     <span class="mi">167</span>      <span class="mf">12.6</span>
+   <span class="mf">10.05</span>     <span class="mi">157</span>      <span class="mf">12.5</span>
+   <span class="mf">10.10</span>     <span class="mi">187</span>      <span class="mf">13.3</span>
+   <span class="mf">10.15</span>     <span class="mi">197</span>      <span class="mf">14.0</span>
+   <span class="mf">10.20</span>     <span class="mi">164</span>      <span class="mf">12.5</span>
+  <span class="o">...</span>
+  <span class="mf">164.65</span>     <span class="mi">173</span>      <span class="mf">30.1</span>
+  <span class="mf">164.70</span>     <span class="mi">187</span>      <span class="mf">27.9</span>
+  <span class="mf">164.75</span>     <span class="mi">175</span>      <span class="mf">38.2</span>
+  <span class="mf">164.80</span>     <span class="mi">168</span>      <span class="mf">30.9</span>
+  <span class="mf">164.85</span>     <span class="mi">109</span>      <span class="mf">41.2</span>
+</code></pre></div>
+<h3 id="example2xy">example2.xy</h3>
+<div class="highlight"><pre><span></span><code><span class="c1">#  2theta  intensity</span>
+   <span class="mf">10.00</span>     <span class="mi">167</span>    
+   <span class="mf">10.05</span>     <span class="mi">157</span>    
+   <span class="mf">10.10</span>     <span class="mi">187</span>    
+   <span class="mf">10.15</span>     <span class="mi">197</span>    
+   <span class="mf">10.20</span>     <span class="mi">164</span>    
+  <span class="o">...</span>
+  <span class="mf">164.65</span>     <span class="mi">173</span>    
+  <span class="mf">164.70</span>     <span class="mi">187</span>    
+  <span class="mf">164.75</span>     <span class="mi">175</span>    
+  <span class="mf">164.80</span>     <span class="mi">168</span>    
+  <span class="mf">164.85</span>     <span class="mi">109</span>    
+</code></pre></div>
+<h3 id="example3xy">example3.xy</h3>
+<div class="highlight"><pre><span></span><code><span class="mi">10</span>  <span class="mf">167.3</span>    
+<span class="mf">10.05</span>  <span class="mf">157.4</span>    
+<span class="mf">10.1</span>  <span class="mf">187.1</span>    
+<span class="mf">10.15</span>  <span class="mf">197.8</span>    
+<span class="mf">10.2</span>  <span class="mf">164.9</span>    
+<span class="o">...</span>
+<span class="mf">164.65</span>  <span class="mf">173.3</span>    
+<span class="mf">164.7</span>  <span class="mf">187.5</span>    
+<span class="mf">164.75</span>  <span class="mf">175.8</span>    
+<span class="mf">164.8</span>  <span class="mf">168.1</span>    
+<span class="mf">164.85</span>  <span class="mi">109</span>    
 </code></pre></div>
 
 
