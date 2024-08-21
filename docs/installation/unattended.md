@@ -17,7 +17,7 @@ $ unzip EasyDiffraction_v0.9.5_ubuntu-22.04.zip
 ```  
 * You can now install **EasyDiffraction** with options for unattended usage
 ```console
-$ ./EasyDiffraction_v0.9.5_ubuntu-22.04.zip install --verbose --confirm-command --default-answer --accept-licenses
+$ ./EasyDiffraction_v0.9.5_ubuntu-22.04 install --verbose --confirm-command --default-answer --accept-licenses
 ```  
 * Run the installed application from the command line
 ```console
