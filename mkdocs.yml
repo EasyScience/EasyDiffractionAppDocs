@@ -83,8 +83,9 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - Installation:
-    - Standard installation: installation/standard.md
-    - Installation from source: installation/from-source.md
+    - Standard: installation/standard.md
+    - From source: installation/from-source.md
+    - Unattended: installation/unattended.md
   - How to use:
     - User interface: how-to-use/user-interface.md
   - Project:
