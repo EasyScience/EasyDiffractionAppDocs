@@ -1,5 +1,10 @@
 # Project information
-site_name: EasyDiffraction
+site_name: EasyDiffraction Application
+site_url: https://docs.easydiffraction.org/app
+
+# Repository
+repo_url: https://github.com/easyscience/EasyDiffractionAppDocs
+edit_uri: edit/develop/docs/
 
 # Copyright
 copyright: © 2024 EasyDiffraction
@@ -10,9 +15,11 @@ theme:
   custom_dir: overrides
   features:
     - content.action.edit
+    #- content.action.view
     - content.code.annotate
     - content.code.copy  # Auto generated button to copy a code block's content
     - content.tooltips
+    - navigation.footer
     - navigation.indexes
     - navigation.sections
     - navigation.top  # Back-to-top button
@@ -44,13 +51,7 @@ theme:
     edit: material/file-edit-outline
   favicon: assets/favicon.ico
 
-# Customization
-extra_css:
-  - assets/stylesheets/extra.css
-extra_javascript:
-  - assets/javascripts/extra.js
-
-# Footer
+# Additional configuration
 extra:
   generator: false  # Disable `Made with Material for MkDocs` (bottom left)
   social:  # Icons (bottom right)
@@ -61,9 +62,11 @@ extra:
     - icon: easyscience
       link: https://easyscience.software
 
-# Repository
-repo_url: https://github.com/easyscience/EasyDiffractionAppDocs
-edit_uri: edit/develop/docs/
+# Customization
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascripts/extra.js
 
 # Extensions
 markdown_extensions:
@@ -80,6 +83,9 @@ markdown_extensions:
       toc_depth: 2
 
 # Page tree
+not_in_nav: |
+  project/dictionaries
+
 nav:
   - Introduction: index.md
   - Installation:
@@ -89,7 +95,9 @@ nav:
   - How to use:
     - User interface: how-to-use/user-interface.md
   - Project:
-    - Structure: project/structure.md
     - Dictionaries: project/dictionaries.md
+    - Structure: project/structure.md
+  - Experiment:
+    - Types: experiment/types.md
   - Misc:
     - Abbreviations: misc/abbreviations.md
