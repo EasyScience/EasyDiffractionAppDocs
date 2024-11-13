@@ -1,8 +1,15 @@
 # macOS
 .DS_Store
 
-# misc
-.venv
-public/
+# MkDocs
+site/
+
+# PyCharm
+.idea/
+
+# Python virtual environment
+.venv/
+
+# Jupyter Notebooks
 jupyter_execute
 .ipynb_checkpoints
