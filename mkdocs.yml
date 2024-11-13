@@ -62,6 +62,7 @@ extra:
     - icon: easyscience
       link: https://easyscience.software
   ci_branch: !ENV [CI_BRANCH, master]
+  eda_latest_version: !ENV [EDA_LATEST_VERSION, v0.0.0]
 
 # Customization to be included by the theme
 extra_css:
@@ -104,6 +105,7 @@ markdown_extensions:
 # A list of plugins (with optional configuration settings) to use when building the site
 plugins:
   - inline-svg
+  - macros
   - search
 
 # Determines additional directories to watch when running mkdocs serve
