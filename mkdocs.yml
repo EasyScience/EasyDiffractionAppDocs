@@ -1,6 +1,6 @@
 # Project information
 site_name: EasyDiffraction Application
-site_url: https://docs.easydiffraction.org/app
+site_url: https://easyscience.github.io/EasyDiffractionAppDocs
 
 # Repository
 repo_url: https://github.com/easyscience/EasyDiffractionAppDocs
@@ -30,14 +30,14 @@ theme:
     - toc.follow
   palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
+    - media: '(prefers-color-scheme: light)'
       scheme: default
       primary: custom
       toggle:
         icon: fontawesome/solid/sun
         name: Switch to dark mode
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: '(prefers-color-scheme: dark)'
       scheme: slate
       primary: custom
       toggle:
@@ -51,53 +51,80 @@ theme:
     edit: material/file-edit-outline
   favicon: assets/favicon.ico
 
-# Additional configuration
+# A set of key-value pairs, where the values can be any valid YAML construct, that will be passed to the template
 extra:
-  generator: false  # Disable `Made with Material for MkDocs` (bottom left)
-  social:  # Icons (bottom right)
+  generator: false # Disable `Made with Material for MkDocs` (bottom left)
+  social: # Icons (bottom right)
     - icon: easydiffraction
       link: https://easydiffraction.org
     - icon: fontawesome/brands/github
       link: https://github.com/easyscience/EasyDiffractionApp
     - icon: easyscience
       link: https://easyscience.software
+  ci_branch: !ENV [CI_BRANCH, master]
+  eda_latest_version: !ENV [EDA_LATEST_VERSION, v0.0.0]
 
-# Customization
+# Customization to be included by the theme
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
   - assets/javascripts/extra.js
 
-# Extensions
+# A list of extensions beyond the ones that MkDocs uses by default (meta, toc, tables, and fenced_code)
 markdown_extensions:
   - abbr
+  - admonition
   - attr_list
   - def_list
   - footnotes
-  - pymdownx.snippets
-  - pymdownx.highlight  # whether highlighting should be carried out during build time by Pygments
-  - pymdownx.superfences  # whether highlighting should be carried out during build time by Pygments
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight: # whether highlighting should be carried out during build time by Pygments
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences: # whether highlighting should be carried out during build time by Pygments
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed: # enables content tabs
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - toc:
-      toc_depth: 2
+      toc_depth: 3
 
-# Page tree
+# A list of plugins (with optional configuration settings) to use when building the site
+plugins:
+  - inline-svg
+  - macros
+  - search
+
+# Determines additional directories to watch when running mkdocs serve
+watch:
+  - includes
+  - overrides
+
+# Format and layout of the global navigation for the site
 not_in_nav: |
-  project/dictionaries
-
+  dictionaries
+  misc/CHANGELOG.md
 nav:
   - Introduction: index.md
-  - Installation:
-    - Standard: installation/standard.md
-    - From source: installation/from-source.md
-    - Unattended: installation/unattended.md
-  - How to use:
-    - User interface: how-to-use/user-interface.md
-  - Project:
-    - Dictionaries: project/dictionaries.md
-    - Structure: project/structure.md
-  - Experiment:
-    - Types: experiment/types.md
-  - Misc:
-    - Abbreviations: misc/abbreviations.md
+  - EasyScience: easyscience.md
+  - Getting started: getting-started.md
+  - Glossary: glossary.md
+  - Dictionaries: dictionaries.md
+  - Project structure: project-structure.md
+  - Model: model.md
+  - Experiment: experiment.md
+  - Analysis: analysis.md
+  - How to use: how-to-use.md
