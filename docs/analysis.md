@@ -8,7 +8,7 @@ There are two general approaches to the analysis of data: **model-dependent** an
 
 A model-independent approach to analysis is where no assumptions are made about the system that is being studied and conclusions are drawn only from the data that has been observed. However, in many applications, it is desirable to include what we think we know about the system, and so model-dependent analysis is used.
 
-Model-dependent analysis involves the development of a mathematical model that describes the model dataset that would be found for our system. This mathematical model usually has parameters that are linked to the physics and chemistry of our system. These parameters are varied to optimise the model, using an optimisation algorithm, with respect to the experimental data, i.e., to get the best agreement between the model data and the experimental data.
+Model-dependent analysis involves the development of a mathematical model that describes the model dataset that would be found for our system. This mathematical model usually has parameters that are linked to the physics and chemistry of our system. These parameters are varied to optimise the model, using an optimisation algorithm, with respect to the experimental data, i.e., to get the best agreement between the model data and the experimental data. 
 
 Below is a diagram illustrating this process:
 
