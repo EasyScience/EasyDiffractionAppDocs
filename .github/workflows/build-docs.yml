@@ -28,12 +28,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Save the latest release version of EasyDiffractionLib to EDL_LATEST_VERSION
-      # EDL_LATEST_VERSION is used in the mkdocs.yml file to set edl_latest_version
-      # edl_latest_version is then needed to display the latest release version of
+      # Save the latest release version of EasyDiffractionLib to EDB_LATEST_VERSION
+      # EDB_LATEST_VERSION is used in the mkdocs.yml file to set edb_latest_version
+      # edb_latest_version is then needed to display the latest release version of
       # EasyDiffractionLib in the index.md file
       - name: Get the latest release version of EasyDiffractionLib
-        run: echo "EDA_LATEST_VERSION=$(curl https://api.github.com/repos/EasyScience/EasyDiffractionBeta/releases/latest | grep -i 'tag_name' | awk -F '"' '{print $4}')" >> $GITHUB_ENV
+        run: echo "EDB_LATEST_VERSION=$(curl https://api.github.com/repos/EasyScience/EasyDiffractionBeta/releases/latest | grep -i 'tag_name' | awk -F '"' '{print $4}')" >> $GITHUB_ENV
 
       - name: Check-out repository
         uses: actions/checkout@v4
