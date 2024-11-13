@@ -16,4 +16,4 @@ EasyDiffraction is licensed under the [BSD 3-Clause License](https://raw.githubu
 
 ## Latest release
 
-The latest release of EasyDiffraction desktop application is [{{ edb_latest_version }}](https://github.com/EasyScience/EasyDiffractionBeta/releases/latest).
+The latest release of EasyDiffraction desktop application is [{{ eda_latest_version }}](https://github.com/EasyScience/EasyDiffractionBeta/releases/latest).

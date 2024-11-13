@@ -33,7 +33,7 @@ jobs:
       # edb_latest_version is then needed to display the latest release version of
       # EasyDiffractionLib in the index.md file
       - name: Get the latest release version of EasyDiffractionLib
-        run: echo "EDB_LATEST_VERSION=$(curl https://api.github.com/repos/EasyScience/EasyDiffractionBeta/releases/latest | grep -i 'tag_name' | awk -F '"' '{print $4}')" >> $GITHUB_ENV
+        run: echo "EDA_LATEST_VERSION=$(curl https://api.github.com/repos/EasyScience/EasyDiffractionBeta/releases/latest | grep -i 'tag_name' | awk -F '"' '{print $4}')" >> $GITHUB_ENV
 
       - name: Check-out repository
         uses: actions/checkout@v4
